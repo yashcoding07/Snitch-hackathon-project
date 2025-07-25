@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { RiArrowRightLongLine } from '@remixicon/react';
-import './Home.css'
+import './Home.css' // Remember to check Home.css for image paths too!
 
 const Home = () => {
   const navigate = useNavigate();
@@ -76,11 +76,12 @@ const Home = () => {
           </button>
         </div>
         <div className="newproductimg">
-          <div className="img img-a"><img src="public/Home/Hoodiemain.jpg" alt="hoodiemain" /></div>
-          <div className="img img-b"><img src="public/Home/Hoodie1.jpg" alt="hoodie1" /></div>
-          <div className="img img-c"><img src="public/Home/Hoodie2.jpg" alt="hoodie2" /></div>
-          <div className="img img-d"><img src="public/Home/Hoodie3.jpg" alt="hoodie3" /></div>
-          <div className="img img-e"><img src="public/Home/Hoodie4.jpg" alt="hoodie4" /></div>
+          {/* Removed public/ from these paths */}
+          <div className="img img-a"><img src="/Home/Hoodiemain.jpg" alt="hoodiemain" /></div>
+          <div className="img img-b"><img src="/Home/Hoodie1.jpg" alt="hoodie1" /></div>
+          <div className="img img-c"><img src="/Home/Hoodie2.jpg" alt="hoodie2" /></div>
+          <div className="img img-d"><img src="/Home/Hoodie3.jpg" alt="hoodie3" /></div>
+          <div className="img img-e"><img src="/Home/Hoodie4.jpg" alt="hoodie4" /></div>
         </div>
       </div>
       <div className='smallabout'>

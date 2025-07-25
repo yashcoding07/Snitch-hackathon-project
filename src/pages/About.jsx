@@ -26,7 +26,8 @@ const About = () => {
       
       <div className="whyus">
         <div className="whyusimg">
-          <img src="/public/Aboutus/aboutus.avif" alt="" />
+          {/* Removed /public/ from the path */}
+          <img src="/Aboutus/aboutus.avif" alt="" />
         </div>
         <div className="whyustext">
           <h1>Why Shop at SNITCH?</h1>
@@ -52,7 +53,8 @@ const About = () => {
           </p>
         </div>
         <div className="stimg">
-          <img src="/public/Aboutus/sharktank.webp" alt="" />
+          {/* Removed /public/ from the path */}
+          <img src="/Aboutus/sharktank.webp" alt="" />
         </div>
       </div>
       
@@ -61,7 +63,8 @@ const About = () => {
         <div className="user-reviews">
           <div className="usercard">
             <div className="userimg">
-              <img src="/public/Aboutus/Aboutususer3.jpg" alt="Arjun Patel"/>
+              {/* Removed /public/ from the path */}
+              <img src="/Aboutus/Aboutususer3.jpg" alt="Arjun Patel"/>
             </div>
             <div className="review">
               <p>"Absolutely love the quality and style! SNITCH has become my go-to for trendy menswear. The fit is perfect every time."</p>
@@ -78,7 +81,8 @@ const About = () => {
 
           <div className="usercard">
             <div className="userimg">
-              <img src="/public/Aboutus/Aboutususer4.jpg" alt="Rohan Shah"/>
+              {/* Removed /public/ from the path */}
+              <img src="/Aboutus/Aboutususer4.jpg" alt="Rohan Shah"/>
             </div>
             <div className="review">
               <p>"The shopping experience is seamless! From online Browse to in-store pickup, everything is so smooth and professional."</p>
@@ -95,7 +99,8 @@ const About = () => {
 
           <div className="usercard">
             <div className="userimg">
-              <img src="/public/Aboutus/Aboutususer1.jpg" alt="Vikram Singh"/>
+              {/* Removed /public/ from the path */}
+              <img src="/Aboutus/Aboutususer1.jpg" alt="Vikram Singh"/>
             </div>
             <div className="review">
               <p>"Premium fabrics and contemporary designs - exactly what I was looking for. SNITCH understands modern men's fashion."</p>
@@ -112,8 +117,8 @@ const About = () => {
 
           <div className="usercard">
             <div className="userimg">
-              {/* Corrected path for Aboutususer2.jpg - it had 'Public' instead of 'public' */}
-              <img src="/public/Aboutus/Aboutususer2.jpg" alt="Karan Mehta"/> 
+              {/* Removed /public/ from the path */}
+              <img src="/Aboutus/Aboutususer2.jpg" alt="Karan Mehta"/> 
             </div>
             <div className="review">
               <p>"Been shopping with SNITCH for over a year now. Consistently great quality and their customer service is top-notch!"</p>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './cursor.css'
+import './Cursor.css'
 import { motion } from "motion/react"
 
 const Cursor = () => {

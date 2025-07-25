@@ -28,7 +28,8 @@ const Signup = () => {
     return (
         <div className='login'>
             <div className='loginhero'>
-                <img src="public/Login/loginandsignup.jpg" alt="Fashion Hero" />
+                {/* Removed /public/ from the path */}
+                <img src="/Login/loginandsignup.jpg" alt="Fashion Hero" />
                 <div className='loginherotext'>
                     <p>
                         "SNITCH makes style effortless — from your first click to your first outfit. Join us and experience premium fashion made easy."
@@ -79,7 +80,8 @@ const Signup = () => {
                     <div className='loginbuttons'>
                         <button className='signinbtn'>Create Account</button>
                         <button className='google'>
-                            <img src='public/Login/google.png' alt="Google Icon" />
+                            {/* Removed /public/ from the path */}
+                            <img src='/Login/google.png' alt="Google Icon" />
                             Sign up with Google
                         </button>
                     </div>

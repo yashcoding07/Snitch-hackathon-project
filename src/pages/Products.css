@@ -13,7 +13,7 @@
 .productsbanner{
     width: 100%;
     height: 30rem;
-    background: url(public/Allproducts/productspage/productsbanner.avif);
+    background: url(/Allproducts/productspage/productsbanner.avif);
     background-size: cover;
     background-position: center;
     display: flex;

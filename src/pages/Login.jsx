@@ -76,8 +76,8 @@ const Login = () => {
           <div className="loginbuttons">
             <button type="submit" className='signinbtn'>Sign in</button>
             <button className='google' type="button">
-              {/* Updated image path */}
-              <img src='public/Login/google.png' alt="Google Icon" />
+              {/* Removed /public/ from the path */}
+              <img src='/Login/google.png' alt="Google Icon" />
               Sign in with Google
             </button>
           </div>
@@ -88,8 +88,8 @@ const Login = () => {
       </div>
 
       <div className='loginhero'>
-        {/* Updated image path */}
-        <img src="public/Login/loginandsignup.jpg" alt="Fashion Hero" />
+        {/* Removed /public/ from the path */}
+        <img src="/Login/loginandsignup.jpg" alt="Fashion Hero" />
         <div className='loginherotext'>
           <p>
             "For those who love a tactile experience, SNITCH stores provide an immersive way to engage with premium fabrics, tailored fits, and contemporary aesthetics."

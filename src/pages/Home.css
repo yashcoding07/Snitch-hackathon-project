@@ -11,7 +11,7 @@
     border-end-end-radius: 3rem;
     border-end-start-radius: 3rem;
     height: 45rem;
-    background: url(public/Home/herosectionhome.jpeg);
+    background: url(/Home/herosectionhome.jpeg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;

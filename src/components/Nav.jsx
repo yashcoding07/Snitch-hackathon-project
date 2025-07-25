@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { RiMenu3Line } from "@remixicon/react";
-import "./Nav.css";
+import "./Nav.css"; // Make sure to check Nav.css for any background image paths too!
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -57,7 +57,8 @@ const Nav = () => {
             navigate("/");
             handleNavClick(); // Close menu when logo is clicked
           }}
-          src="public/Navbar/logo.webp"
+          // Corrected image path: removed 'public/'
+          src="/Navbar/logo.webp" 
           alt="Logo"
         />
       </div>
