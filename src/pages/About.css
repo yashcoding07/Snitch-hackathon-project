@@ -415,7 +415,7 @@
 /* Tablet Responsiveness */
 @media (max-width: 1024px) and (min-width: 769px) {
     .about{
-        min-height: 300vh;
+        min-height: auto;
     }
     .lastsection {
         background-attachment: scroll;
@@ -430,7 +430,7 @@
 /* Mobile Responsiveness */
 @media (max-width: 968px) {
     .about{
-        min-height: 803vh;
+        min-height: auto;
     }
 
     .abouthero{

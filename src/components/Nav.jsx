@@ -65,8 +65,8 @@ const Nav = () => {
 
       <div className={`links ${menuOpen ? 'open' : ''}`}>
         <NavLink to={'/'} onClick={handleNavClick}>Home</NavLink>
-        <NavLink to={'/Products'} onClick={handleNavClick}>Products</NavLink>
         <NavLink to={'/About'} onClick={handleNavClick}>About Us</NavLink>
+        <NavLink to={'/Products'} onClick={handleNavClick}>Products</NavLink>
         <button 
           className="loginbtn" 
           onClick={() => {

@@ -632,8 +632,8 @@
     
     .newproducts {
         flex-direction: column;
-        min-height: 5vh;
-        height: 230vh;
+        min-height: auto;
+        height: auto;
     }
 
     .content,
@@ -774,7 +774,8 @@
     }
     
     .newproducts{
-        height: 215vh;
+        height: auto;
+        min-height: auto;
     }
 }
     @media  (max-width: 325px) {
