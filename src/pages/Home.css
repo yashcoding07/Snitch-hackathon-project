@@ -496,7 +496,7 @@
 }
 
 .smallabout {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),url(public/Home/smallabout.avif);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),url(/Home/smallabout.avif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
