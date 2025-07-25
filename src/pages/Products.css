@@ -1,0 +1,307 @@
+.products{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    min-height: 600vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+    padding: 0 1rem;
+    user-select: none;
+}
+
+.productsbanner{
+    width: 100%;
+    height: 30rem;
+    background: url(public/Allproducts/productspage/productsbanner.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+
+.productsbanner h1{
+    font-family: 'Century Gothic';
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+}
+
+.heredownbtn {
+    font-family: 'Century Gothic';
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    overflow: hidden;
+    color: black;
+}
+
+.heredownbtn .text, 
+.heredownbtn .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.heredownbtn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.heredownbtn:hover .text {
+    transform: translateX(-5px);
+}
+
+.heredownbtn:hover .arrow {
+    transform: translateX(5px);
+}
+
+.shirts, .Tshirts, .Jeans, .trousers, .shorts, .kurtas,.hoodies {
+    margin-top: 2.5rem;
+    background-color: white;
+    width: 100%;
+}
+
+.shirts h2, .Tshirts h2, .Jeans h2, .trousers h2, .shorts h2,.kurtas h2,.hoodies h2 {
+    font-family: 'Century Gothic';
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+}
+
+.shirtgrid, .Tshirtgrid, .Jeansgrid, .trousersgrid, .shortsgrid, .kurtasgrid, .hoodiesgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.shirtgrid::-webkit-scrollbar, 
+.Tshirtgrid::-webkit-scrollbar, 
+.Jeansgrid::-webkit-scrollbar, 
+.trousersgrid::-webkit-scrollbar, 
+.shortsgrid::-webkit-scrollbar,
+.kurtasgrid::-webkit-scrollbar-thumb:hover,
+.hoodiesgrid::-webkit-scrollbar-thumb:hover{
+    height: 6px;
+}
+
+.shirtgrid::-webkit-scrollbar-track,
+.Tshirtgrid::-webkit-scrollbar-track,
+.Jeansgrid::-webkit-scrollbar-track,
+.trousersgrid::-webkit-scrollbar-track,
+.shortsgrid::-webkit-scrollbar-track,
+.kurtasgrid::-webkit-scrollbar-thumb:hover,
+.hoodiesgrid::-webkit-scrollbar-thumb:hover
+ {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.shirtgrid::-webkit-scrollbar-thumb,
+.Tshirtgrid::-webkit-scrollbar-thumb,
+.Jeansgrid::-webkit-scrollbar-thumb,
+.trousersgrid::-webkit-scrollbar-thumb,
+.shortsgrid::-webkit-scrollbar-thumb,
+.kurtasgrid::-webkit-scrollbar-thumb:hover,
+.hoodiesgrid::-webkit-scrollbar-thumb:hover
+ {
+    background: #888;
+    border-radius: 3px;
+}
+
+.shirtgrid::-webkit-scrollbar-thumb:hover,
+.Tshirtgrid::-webkit-scrollbar-thumb:hover,
+.Jeansgrid::-webkit-scrollbar-thumb:hover,
+.trousersgrid::-webkit-scrollbar-thumb:hover,
+.shortsgrid::-webkit-scrollbar-thumb:hover,
+.kurtasgrid::-webkit-scrollbar-thumb:hover,
+.hoodiesgrid::-webkit-scrollbar-thumb:hover
+{
+    background: #555;
+}
+
+.shirtcard, .Tshirtcard, .Jeanscard, .trouserscard, .shortscard, .kurtascard, .hoodiescard{
+    flex: 0 0 18rem;
+    min-width: 18rem;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    scroll-snap-align: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shirtcard:hover, .Tshirtcard:hover, .Jeanscard:hover, .trouserscard:hover, .shortscard:hover, .kurtascard:hover, .hoodiescard:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.shirtcard img, 
+.Tshirtcard img, 
+.Jeanscard img, 
+.trouserscard img, 
+.shortscard img,
+.kurtascard img,
+.hoodiescard img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.productinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.productinfo h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    flex: 1;
+    width: 100%;
+    white-space: nowrap;  
+    overflow: hidden;      
+    text-overflow: ellipsis; 
+}
+
+.productinfo p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.seedetailsbtn {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.seedetailsbtn .text, 
+.seedetailsbtn .arrow {
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.seedetailsbtn:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.seedetailsbtn:hover .text {
+    transform: translateX(-5px);
+}
+
+.seedetailsbtn:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Tablets (Medium Screens) */
+@media (max-width: 992px) {
+    .productsbanner h1 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .heredownbtn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .shirtgrid, .Tshirtgrid, .Jeansgrid, .trousersgrid, .shortsgrid, .kurtasgrid, .hoodiesgrid {
+        gap: 1.5rem;
+    }
+
+    .shirtcard, .Tshirtcard, .Jeanscard, .trouserscard, .shortscard, .kurtascard, .hoodiescard {
+        flex: 0 0 16rem;
+        min-width: 16rem;
+    }
+
+    .productinfo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .seedetailsbtn {
+        padding: 0.4rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile (Small Screens) */
+@media (max-width: 768px) {
+    .productsbanner {
+        height: 20rem;
+        border-radius: 1rem;
+        text-align: center;
+    }
+
+    .productsbanner h1 {
+        font-size: 2.2rem;
+    }
+
+    .heredownbtn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .shirtcard, .Tshirtcard, .Jeanscard, .trouserscard, .shortscard, .kurtascard, .hoodiescard {
+        flex: 0 0 80vw;
+        min-width: 80vw;
+    }
+
+    .productinfo {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .seedetailsbtn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .shirtgrid, .Tshirtgrid, .Jeansgrid, .trousersgrid, .shortsgrid, .kurtascard, .hoodiescard {
+        gap: 1rem;
+    }
+}

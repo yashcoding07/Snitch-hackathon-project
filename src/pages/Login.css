@@ -1,0 +1,425 @@
+.login {
+    font-family: 'Dubai';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    user-select: none;
+}
+
+.loginform {
+    width: 40%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.loginform h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.loginform .wel{
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    letter-spacing: -1.5px;
+    line-height: 1px;
+    font-weight: 200;
+    color: #9d9d9d;
+}
+
+.loginform form {
+    width: 80%;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+.loginform form .loginemail {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+form input {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+form input:focus {
+   outline: none;
+   border-color: #000;
+   transform: translateY(-2px);
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+   background: white;
+}
+
+form input::placeholder {
+   text-align: start;
+   color: #aaa;
+   transition: opacity 0.3s ease;
+}
+
+form input:focus::placeholder {
+   opacity: 0.6;
+}
+
+.loginform form .loginpassword {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+}
+
+.loginform form .logincheck {
+    display: flex;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logincheck p {
+   color: #000;
+   text-decoration: none;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   position: relative;
+}
+
+.logincheck p::after {
+   content: '';
+   position: absolute;
+   width: 0;
+   height: 2px;
+   bottom: -2px;
+   left: 0;
+   background-color: #000;
+   transition: width 0.3s ease;
+}
+
+.logincheck p:hover::after {
+   width: 100%;
+}
+
+.logincheck span input {
+    margin-right: 0.5rem;
+}
+
+.loginform form .loginbuttons {
+    width: 100%;
+}
+
+.loginbuttons .signinbtn {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.loginbuttons .signinbtn:hover::before {
+   left: 100%;
+}
+
+.loginbuttons .signinbtn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.loginbuttons .signinbtn:active {
+   transform: translateY(0);
+}
+
+.google {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.google:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+   border-color: rgba(0, 0, 0, 0.2);
+}
+
+.google img {
+    background: transparent;
+    height: 2rem;
+    width: 2rem;
+}
+
+.loginhero {
+    width: 60%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.loginhero img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.loginherotext {
+    padding: 3rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    position: absolute;
+    background: linear-gradient(
+       135deg, 
+       rgba(255, 255, 255, 0.9) 0%, 
+       rgba(255, 255, 255, 0.7) 100%
+   );
+   transition: underline 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.loginherotext .word {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.loginherotext .word::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0%;
+    background: #000;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateX(0%);
+}
+
+.loginherotext .word:hover::after {
+    width: 100%;
+}
+
+.loginherotext .word:hover {
+    color: #000;
+}
+
+.switchpage{
+    text-align: center;
+}
+
+.switchpage p{
+    font-size: 1rem;
+    color: #000;
+}
+
+/* Responsive Design */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .loginform {
+        width: 45%;
+        padding: 1.5rem 0;
+    }
+    
+    .loginhero {
+        width: 55%;
+    }
+    
+    .loginform h1 {
+        font-size: 2.5rem;
+    }
+    
+    .loginform .wel {
+        font-size: 1.2rem;
+    }
+    
+    .loginherotext {
+        padding: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .loginform {
+        width: 100%;
+        order: 2;
+        padding: 2rem 1rem;
+        min-height: auto;
+    }
+    
+    .loginhero {
+        width: 100%;
+        height: 40vh;
+        order: 1;
+    }
+    
+    .loginform h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .loginform .wel {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .loginform form {
+        width: 90%;
+        max-width: 400px;
+        padding: 1.2rem;
+        gap: 1.2rem;
+    }
+    
+    .loginherotext {
+        padding: 1.5rem;
+        font-size: 1.2rem;
+        bottom: 5%;
+    }
+    
+    .logincheck {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    
+    .logincheck span {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    .login {
+        padding: 0;
+    }
+    
+    .loginform {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .loginhero {
+        height: 30vh;
+    }
+    
+    .loginform h1 {
+        font-size: 1.8rem;
+    }
+    
+    .loginform .wel {
+        font-size: 1rem;
+        letter-spacing: -0.5px;
+    }
+    
+    .loginform form {
+        width: 95%;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    
+    .loginform form .loginemail,
+    .loginform form .loginpassword {
+        font-size: 1rem;
+    }
+    
+    form input {
+        padding: 0.6rem 0.8rem;
+        font-size: 1rem;
+    }
+    
+    .loginbuttons .signinbtn {
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .google {
+        padding: 0.9rem 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .google img {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+    
+    .loginherotext {
+        padding: 1rem;
+        font-size: 1rem;
+        bottom: 8%;
+        left: 50%;
+        right: auto;
+        width: 90%;
+        transform: translateX(-50%);
+    }
+    
+    .logincheck {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+    
+    .logincheck span {
+        width: auto;
+        margin-bottom: 0;
+    }
+    
+    .switchpage p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small screens */
+@media (max-width: 320px) {
+    .loginform h1 {
+        font-size: 1.6rem;
+    }
+    
+    .loginform .wel {
+        font-size: 0.9rem;
+    }
+    
+    .loginform form {
+        padding: 0.8rem;
+    }
+    
+    .loginherotext {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+}
