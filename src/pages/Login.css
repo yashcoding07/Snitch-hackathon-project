@@ -1,13 +1,13 @@
 .login {
     font-family: 'Dubai';
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 65px);
     background-color: white;
     user-select: none;
-    padding-top: 50px;
+    padding-top: 0;
+    padding-bottom: 5rem;
 }
 
 .loginform {
@@ -189,49 +189,7 @@ form input:focus::placeholder {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-
-.loginherotext {
-    padding: 3rem;
     border-radius: 1rem;
-    font-size: 1.5rem;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    position: absolute;
-    background: linear-gradient(
-       135deg, 
-       rgba(255, 255, 255, 0.9) 0%, 
-       rgba(255, 255, 255, 0.7) 100%
-   );
-   transition: underline 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-
-.loginherotext .word {
-    position: relative;
-    display: inline;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.loginherotext .word::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -2px;
-    left: 0%;
-    background: #000;
-    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transform: translateX(0%);
-}
-
-.loginherotext .word:hover::after {
-    width: 100%;
-}
-
-.loginherotext .word:hover {
-    color: #000;
 }
 
 .switchpage{
@@ -264,18 +222,14 @@ form input:focus::placeholder {
         font-size: 1.2rem;
     }
     
-    .loginherotext {
-        padding: 2rem;
-        font-size: 1.3rem;
-    }
 }
 
 /* Tablets */
 @media (max-width: 768px) {
     .login {
         flex-direction: column;
-        min-height: 100vh;
-        padding-top: 60px;
+        min-height:calc(100vh - 60px);
+        padding: 0 1rem 5rem 1rem;
     }
     
     .loginform {
@@ -308,11 +262,6 @@ form input:focus::placeholder {
         gap: 1.2rem;
     }
     
-    .loginherotext {
-        padding: 1.5rem;
-        font-size: 1.2rem;
-        bottom: 5%;
-    }
     
     .logincheck {
         flex-wrap: wrap;
@@ -328,7 +277,9 @@ form input:focus::placeholder {
 /* Mobile phones */
 @media (max-width: 480px) {
     .login {
-        padding-top: 50px;
+        justify-content: center;
+        padding: 0 0.5rem 4rem 0.5rem;
+        min-height: calc(100vh - 55px);
     }
     
     .loginform {
@@ -379,16 +330,6 @@ form input:focus::placeholder {
         width: 1.5rem;
     }
     
-    .loginherotext {
-        padding: 1rem;
-        font-size: 1rem;
-        bottom: 8%;
-        left: 50%;
-        right: auto;
-        width: 90%;
-        transform: translateX(-50%);
-    }
-    
     .logincheck {
         font-size: 0.95rem;
         flex-direction: column;
@@ -417,11 +358,6 @@ form input:focus::placeholder {
     }
     
     .loginform form {
-        padding: 0.8rem;
-    }
-    
-    .loginherotext {
-        font-size: 0.9rem;
         padding: 0.8rem;
     }
 }

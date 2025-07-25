@@ -30,11 +30,6 @@ const Signup = () => {
             <div className='loginhero'>
                 {/* Removed /public/ from the path */}
                 <img src="/Login/loginandsignup.jpg" alt="Fashion Hero" />
-                <div className='loginherotext'>
-                    <p>
-                        "SNITCH makes style effortless — from your first click to your first outfit. Join us and experience premium fashion made easy."
-                    </p>
-                </div>
             </div>
             <div className='loginform'>
                 <h1>Create Account</h1>

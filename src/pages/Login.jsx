@@ -15,21 +15,6 @@ const Login = () => {
     reset(); 
   };
 
-    useEffect(() => {
-        const heroText = document.querySelector('.loginherotext p');
-
-        if (heroText) {
-            const text = heroText.textContent;
-            const words = text.split(' ');
-
-            heroText.innerHTML = words.map(word =>
-                `<span class="word">${word}</span>`
-            ).join(' ');
-        }
-    }, []);
-
-
-
   return (
     <div className='login'>
       <div className='loginform'>
@@ -90,11 +75,6 @@ const Login = () => {
       <div className='loginhero'>
         {/* Removed /public/ from the path */}
         <img src="/Login/loginandsignup.jpg" alt="Fashion Hero" />
-        <div className='loginherotext'>
-          <p>
-            "For those who love a tactile experience, SNITCH stores provide an immersive way to engage with premium fabrics, tailored fits, and contemporary aesthetics."
-          </p>
-        </div>
       </div>
     </div>
   );

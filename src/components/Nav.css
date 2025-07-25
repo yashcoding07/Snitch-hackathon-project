@@ -101,10 +101,10 @@
 }
 
 @media (max-width: 768px) {
-    .navbar {
+    /* .navbar {
         position: relative;
         margin-top: -5.5rem;
-    }
+    } */
 
     .menu-icon {
         display: block;
